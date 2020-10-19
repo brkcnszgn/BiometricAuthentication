@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".MainActivity">
+
+	<TextView
+		android:id="@+id/outputText"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Output"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<Button
+		android:id="@+id/encryptButton"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_margin="40dp"
+		android:text="Encrypt"
+		app:layout_constraintEnd_toStartOf="@+id/decryptButton"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/outputText" />
+
+	<Button
+		android:id="@+id/decryptButton"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_margin="40dp"
+		android:text="Decrypt"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintStart_toEndOf="@+id/encryptButton"
+		app:layout_constraintTop_toBottomOf="@+id/outputText" />
+
+	<TextView
+		android:id="@+id/inputText"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Input"
+		app:layout_constraintBottom_toTopOf="@+id/outputText"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<Button
+		android:id="@+id/navigateSignInButton"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_margin="24dp"
+		android:text="Navigate to Sign In"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
